@@ -34,4 +34,5 @@ int main()
         cout << "I'm still learning more :) " << endl;
         break;
     }
+    return 0;
 }
