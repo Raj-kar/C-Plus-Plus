@@ -6,3 +6,7 @@
 #   Comma(,)                    Causes a sequences of operations to be performed
 #   &                           Returns the address of variable
 #   *                           Points to a variable [in array at first index ]
+
+
+>> if we write --> int a = 2,3,4 .. The a value will be 4 [the last one !]
+
