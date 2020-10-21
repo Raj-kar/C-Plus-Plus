@@ -14,9 +14,10 @@ int main()
         for (int j = 1; j <= column; j++)
         {
             if (j <= i or j >= (column + 1) - i)
-                cout << "*";
+                cout << "*"
+                     << " ";
             else
-                cout << " ";
+                cout << " " << " ";
         }
         cout << endl;
     }
@@ -24,12 +25,28 @@ int main()
     {
         for (int j = 1; j <= column; j++)
         {
-            if (j <= (row + 1)-i or j >= row + i)
-                cout << "*";
+            if (j <= (row + 1) - i or j >= row + i)
+                cout << "*"
+                     << " ";
             else
-                cout << " ";
+                cout << " "<< " ";
         }
         cout << endl;
     }
     return 0;
 }
+
+/*
+
+*                 *
+* *             * *
+* * *         * * *
+* * * *     * * * *
+* * * * * * * * * *
+* * * * * * * * * *
+* * * *     * * * *
+* * *         * * *
+* *             * *
+*                 *
+
+*/

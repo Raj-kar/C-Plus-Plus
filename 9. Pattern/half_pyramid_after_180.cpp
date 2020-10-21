@@ -13,15 +13,25 @@ int main()
     {
         for (int k = 0; k < space - 1; k++)
         {
-            cout << " ";
+            cout << " " << " ";
         }
         space -= 1;
 
         for (int j = 0; j < i + 1; j++)
         {
-            cout << "*";
+            cout << "*" << " ";
         }
         cout << endl;
     }
     return 0;
 }
+
+/*
+
+       *
+      * *
+    * * *
+  * * * *
+* * * * *
+
+*/

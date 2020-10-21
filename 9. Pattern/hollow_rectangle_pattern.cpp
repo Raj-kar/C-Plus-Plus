@@ -32,3 +32,16 @@ int main()
     }
     return 0;
 }
+
+/*
+Enter row number : 7
+Enter column number : 10
+Enter your symbol : *
+**********
+*        *
+*        *
+*        *
+*        *
+*        *
+**********
+*/
