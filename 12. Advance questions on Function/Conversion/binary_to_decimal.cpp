@@ -25,7 +25,7 @@ int main()
 
     int decimal = binary_to_decimal(binary_num);
 
-    cout << "Decimal of " << binary_num << " is " << decimal;
+    cout << "Decimal of " << binary_num << " is " << decimal << endl;
 
     return 0;
 }
