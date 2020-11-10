@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+
+    char c;
+
+    cout << "Enter a alphabate :: " << endl;
+    cin >> c;
+    c = tolower(c);
+
+    switch(c)
+    {
+        case 'a':
+        case 'e': 
+        case 'i': 
+        case 'o': 
+        case 'u': cout << c << " is VOWEL" << endl;
+        break;
+        
+        default: cout << c <<  " is CONSONENT" << endl;
+    }
+
+    return 0;
+}
