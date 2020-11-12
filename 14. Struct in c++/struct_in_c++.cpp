@@ -15,8 +15,7 @@ struct book
         {
             cout << "Enter Book id, title and price :: " << endl;
             cin >> book_id >> book_name >> book_price;
-            /* book price can't be negative */
-            if(book_price < 0)
+            if (book_price < 0) /* book price can't be negative */
                 book_price = book_price * - 1;
         }
         void display() // function member
