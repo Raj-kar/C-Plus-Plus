@@ -1,3 +1,5 @@
+/* C++ Program to Check Armstrong Number */
+
 #include <iostream>
 #include <string.h>
 using namespace std;

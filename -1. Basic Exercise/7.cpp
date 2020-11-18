@@ -1,3 +1,5 @@
+/*  C++ Program to Check Whether Number is Even or Odd */
+
 #include <iostream>
 using namespace std;
 
