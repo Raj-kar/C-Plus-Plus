@@ -1,34 +1,28 @@
 /* C++ Program to Display Armstrong Number Between Two Intervals */
 
 #include <iostream>
-#include <string.h>
+#include <math.h>
 using namespace std;
-
-int power(int base, int expo)
-{
-    int res = 1;
-
-    for (int i = 1; i <= expo; i++)
-        res *= base;
-    return res;
-}
 
 void amstrong(int num)
 {
-    string str_num = to_string(num);
-    int len, NUM = num, rem, sum = 0;
+    int len = 0, NUM, rem;
+    float sum = 0.0;
 
-    len = str_num.size();
-
-    while (num != 0)
+    for (NUM = num; NUM != 0; len++) // count the len
     {
-        rem = num % 10;
-        sum += power(rem, len);
-        num /= 10;
+        NUM /= 10;
     }
+    NUM = num;
 
-    if (sum == NUM)
-        cout << NUM << " ";
+    while (NUM != 0)
+    {
+        rem = NUM % 10;
+        sum += pow(rem, len);
+        NUM /= 10;
+    }
+    if (sum == num)
+        cout << num << " ";
 }
 
 int main()

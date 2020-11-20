@@ -1,40 +1,34 @@
 /* C++ Program to Check Armstrong Number */
 
 #include <iostream>
-#include <string.h>
+#include <math.h>
 using namespace std;
-
-int power(int base, int expo)
-{
-    int res = 1;
-
-    for (int i = 1; i <= expo; i++)
-        res *= base;
-    return res;
-}
 
 int main()
 {
-    char num[20];
-    int len, NUM, rem, sum = 0;
+    int len = 0, NUM, rem, num;
+    float sum = 0.0;
 
     cout << "Enter a number :: " << endl;
-    gets(num);
-    NUM = atoi(num);
+    cin >> num;
 
-    len = strlen(num);
+    for (NUM = num; NUM != 0; len++) // count the len
+    {
+        NUM /= 10;
+    }
+    NUM = num;
 
     while (NUM != 0)
     {
         rem = NUM % 10;
-        sum += power(rem, len);
+        sum += pow(rem, len);
         NUM /= 10;
     }
-    
-    if (sum == atoi(num))
-        cout << atoi(num) << " is a amstrong number . " << endl;
+
+    if (sum == num)
+        cout << num << " is a amstrong number . " << endl;
     else
-        cout << atoi(num) << " is not a amstrong number . " << endl;
+        cout << num << " is not a amstrong number . " << endl;
 
     return 0;
 }
