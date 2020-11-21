@@ -17,19 +17,20 @@ public:
         cout << "a = " << a << " b = " << b << endl;
     }
 
-    friend void fun();
+    friend void fun(Complex c); /* declare in class, but define outside */
 };
 
-void fun()
+void fun(Complex c) /* no need of membership for class friend */
 {
-    cout << "FUN Func. called ! " << endl;
+    cout << "Sum = " << c.a + c.b;
 }
 
 int main()
 {
     Complex c1;
+    c1.set_data(4,5);
     c1.show_data();
-
-    return 0;
+    fun(c1);
     
+    return 0;
 }
