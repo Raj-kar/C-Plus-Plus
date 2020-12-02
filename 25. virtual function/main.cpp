@@ -4,12 +4,26 @@ using namespace std;
 class Car
 {
     int gear = 0;
+    string color = "white";
 
 public:
     virtual void gearUp()
     {
         gear += 1;
         cout << "Gear = " << gear << endl;
+    }
+    virtual void colorChange()
+    {
+        if (color == "white")
+        {
+            cout << "Car color change to black" << endl;
+            color = "black";
+        }
+        else
+        {
+            cout << "Car color change to white" << endl; 
+            color = "white";
+        }
     }
 };
 
@@ -35,6 +49,10 @@ int main()
     p->gearUp(); /* here p is pointer of class Car, but points to SportsCar obj, so compiler will * early bind *
                     Car class gearUp() method. so we have to use virtual function. so it'll called gearUp() method 
                     of SportsCar obj, during runtime !    */
+
+    p = &c1;
+    p->colorChange();
+    p->colorChange();
 
     return 0;
 }
