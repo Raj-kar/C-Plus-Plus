@@ -2,7 +2,7 @@
 using namespace std;
 
 /* template means a form [like a bank form ] */
-template <class X> // automatically detect received and return type
+template <class X> // automatically detect received and return type, X is placeholder.
 X add(X a, X b)
 {
     return a + b;
