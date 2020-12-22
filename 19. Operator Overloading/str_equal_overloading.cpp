@@ -37,9 +37,9 @@ int main()
     str1.set_data("RAJA");
     str3.set_data("RAJ");
 
-    str1 = str2;
-    str2 = str3;
-    str1 = str4;
+    str1 = str2; /* not same */
+    str2 = str3; /* not same */
+    str1 = str4; /* same */
 
     return 0;
 }

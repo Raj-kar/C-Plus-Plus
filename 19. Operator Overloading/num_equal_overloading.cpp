@@ -32,17 +32,16 @@ public:
             cout << "false" << endl;
         }
     }
-    
 };
 
 int main()
 {
     Integer a, b, c(40), d(40); /* create three obj of class Integer */
-    a.set_data(10);  /* set value a to 10 */
-    b.set_data(20);  /* set value b to 20 */
+    a.set_data(10);             /* set value a to 10 */
+    b.set_data(20);             /* set value b to 20 */
 
-    a = b;
-    c = d;
+    a = b; /* false */
+    c = d; /* true */
 
     return 0;
 }
